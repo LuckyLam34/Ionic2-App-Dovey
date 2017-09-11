@@ -1,0 +1,57 @@
+page-create-new-case {
+  span.select-date {
+    float: right;
+    font-weight: bold;
+  }
+  .hearing-font {
+    font-size: $normal-font-size;
+  }
+
+  .btt-save {
+    margin-top: 20px;
+    color: #fff;
+    height: $button-height;
+  }
+
+  a.no-deco {
+    color: #000;
+  }
+
+  .col1 {
+    
+    display: flex;
+
+    div {
+      flex-grow: 1;
+      width: 33%;
+      height: 20px;
+    }
+
+    .border-left {
+      border-left: 1px solid color($colors, primaryIconColor);
+    }
+
+    .padding-left {
+      padding-left: 10px;
+    }
+
+    // .arrow {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    // }
+  }
+
+  .col2 {
+    float: left;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .icon-color {
+    color: color($colors, primaryIconColor);
+  }
+
+}

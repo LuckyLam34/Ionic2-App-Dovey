@@ -1,0 +1,28 @@
+page-add-new-client {
+  h4 {
+    text-align: center;
+    color: color($colors, primary);
+  }
+
+  .icon-color {
+    color: color($colors, primaryIconColor);
+  }
+
+  a.no-deco {
+    color: #000;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .margin {
+    margin-top: 20px;
+  }
+
+  .btt-save {
+    margin-top: 20px;
+    color: #fff;
+    height: $button-height;
+  }
+}

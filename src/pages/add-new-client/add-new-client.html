@@ -1,0 +1,56 @@
+<!--
+  Generated template for the AddNewClientPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navbarColor">
+    <button ion-button icon-only end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add New Client</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h4>Add new contact for a quick search</h4>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label color="blackColor" floating>Contact Name*</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="blackColor" floating>Contact phone number*</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="blackColor" floating>Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="blackColor" floating>Address</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="margin" (click)="selectAClient()">
+      <a class="no-deco" >City Name</a>
+      <ion-icon class="arrow pull-right icon-color" name="ios-arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-item class="margin" (click)="selectAClient()">
+      <a class="no-deco" >State Name</a>
+      <ion-icon class="arrow pull-right icon-color" name="ios-arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label color="blackColor" floating>Pin code</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="margin">
+      <ion-textarea placeholder="Remarks"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <button class="btt-save" (click)="go()" ion-button full color="buttonColor">ADD TO THE LIST</button>
+</ion-content>

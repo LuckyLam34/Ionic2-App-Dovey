@@ -1,0 +1,33 @@
+<!--
+  Generated template for the SelectAClientPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navbarColor">
+    <button ion-button icon-only end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Select a Client</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-title color="titleColor" class="title-center">Select a Client</ion-title>
+  <!--<button ion-button (click)="addClient()">Add a client</button>-->
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <br>
+  <a class="add-client" (click)="addClient()">Add a Client + </a>
+
+  <br><br>
+  <!--<ul class="list">
+    <li *ngFor="let client of clients">{{client}}</li>
+  </ul>-->
+  <ion-list>
+    <ion-item *ngFor="let client of clients" no-lines>{{client}}</ion-item>
+  </ion-list>
+</ion-content>
