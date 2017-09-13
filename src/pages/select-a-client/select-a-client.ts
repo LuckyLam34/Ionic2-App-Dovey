@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { AddNewClientPage } from '../pages';
+import { SqlStorage } from '../../shared/shared';
 
 /**
  * Generated class for the SelectAClientPage page.
@@ -27,11 +28,11 @@ export class SelectAClientPage {
     'Client 8'
   ]
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public sqlStorage:SqlStorage) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SelectAClientPage');
+    this.sqlStorage.hello();
   }
 
   addClient() {
